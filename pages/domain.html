@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain - DTIF Project</title>
+    <meta name="description" content="Research Domain details for the Digital Tourism Intelligence Framework (DTIF) including Literature Survey, Gaps, Objectives, and Methodology.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+        .gap-card {
+            background: #f8fafc;
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+        }
+        .gap-card h3 {
+            color: var(--deep-navy);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .problem-statement {
+            background: linear-gradient(135deg, var(--deep-navy), #004080);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            margin: 4rem 0;
+        }
+        .problem-statement h2 {
+            color: var(--emerald-green);
+            margin-bottom: 1.5rem;
+            border: none;
+            padding: 0;
+        }
+        .objective-list {
+            list-style: none;
+            padding: 0;
+        }
+        .objective-list li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+        .objective-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--emerald-green);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .methodology-step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+        .step-number {
+            background: rgba(0, 133, 62, 0.1);
+            color: var(--emerald-green);
+            font-size: 1.5rem;
+            font-weight: 800;
+            min-width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid var(--emerald-green);
+        }
+        .step-content {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            flex: 1;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    <span>DTIF</span> Project
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="domain.html" class="active">Domain</a></li>
+                    <li><a href="milestones.html">Milestones</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 5rem 2rem; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../images/Yala.jpg') center/cover no-repeat;">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem;">Research Domain</h1>
+                <p style="font-size: 1.2rem; opacity: 0.9;">Exploring the theoretical foundations, identified gaps, and the methodological approach of the DTIF architecture.</p>
+            </div>
+        </section>
+
+        <section class="container" style="max-width: 1000px; margin-top: -3rem; position: relative; z-index: 10;">
+            
+            <!-- Literature Survey -->
+            <div class="domain-section card" style="padding: 3rem;">
+                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                    <span style="font-size: 2rem;">📚</span>
+                    <h2 style="margin: 0; border: none; padding: 0;">Literature Survey</h2>
+                </div>
+                <p style="margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.8;">The literature review highlights a critical problem: <strong>A Fragmented Ecosystem</strong>. Despite a significant post-pandemic resurgence, with Sri Lanka reaching 2.36 million arrivals in 2025, the underlying tourism planning infrastructure remains largely based on guesswork and intuition.</p>
+                <p style="line-height: 1.8; color: var(--text-muted);">The existing body of research demonstrates that crucial destination management aspects—such as macro-level demand forecasting, dynamic visitor flow distribution across hotspots, and real-time sentiment analysis—are currently treated as isolated, siloed tasks. Furthermore, traditional statistical approaches (like ARIMA) frequently fail to capture the shock-sensitive nature of modern tourism demand. In the realm of traveler experience, most existing systems are predominantly English-centric, ignoring local linguistic nuances, and fail to synthesize visual aesthetics with text-based reviews.</p>
+            </div>
+
+            <!-- Problem Statement -->
+            <div class="problem-statement">
+                <h2 style="font-size: 2rem;">The Core Problem</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; opacity: 0.9;">
+                    Sri Lanka's tourism sector lacks a cohesive, data-driven intelligence framework to synchronize macro-level demand forecasting with micro-level visitor flow and experiential management. This leads to unmanaged congestion, misinterpretation of traveler sentiments, and generalized service offerings.
+                </p>
+            </div>
+
+            <!-- Research Gaps -->
+            <div class="domain-section" style="margin-bottom: 4rem;">
+                <h2 style="margin-bottom: 2rem;">Identified Research Gaps</h2>
+                <div class="grid-2">
+                    <div class="gap-card">
+                        <h3><span>📉</span> Forecasting Inflexibility</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">Statistical models like ARIMA fail to capture the non-linear, "shock-sensitive" nature of tourism demand in Sri Lanka.</p>
+                    </div>
+                    <div class="gap-card">
+                        <h3><span>🗺️</span> Siloed Flow Management</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">Traditional flow studies focus on attractions independently, failing to integrate macro-level forecasting with dynamic congestion management.</p>
+                    </div>
+                    <div class="gap-card">
+                        <h3><span>🌐</span> Multilingual & Multimodal Gaps</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">Most recommendation systems are English-centric and ignore local languages like Sinhala and Tamil, failing to integrate visual aesthetics.</p>
+                    </div>
+                    <div class="gap-card">
+                        <h3><span>🎭</span> The Sarcasm Barrier</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">Standard sentiment analysis often misinterprets sarcastic reviews where positive language masks a negative experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Objectives -->
+            <div class="domain-section card" style="padding: 3rem;">
+                <h2 style="margin-bottom: 1.5rem;">Research Objectives</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem;">To design, develop, and evaluate the Digital Tourism Intelligence Framework (DTIF)—a unified AI architecture aimed at transitioning Sri Lanka's tourism planning to data-driven precision by:</p>
+                <ul class="objective-list">
+                    <li><strong>Predictive Accuracy:</strong> Developing a highly reliable arrival forecasting mechanism using hybrid ensembles.</li>
+                    <li><strong>Capacity Control:</strong> Creating a dynamic flow distribution model to project and manage visitor congestion across key sites.</li>
+                    <li><strong>Personalization:</strong> Engineering a multimodal recommendation engine accommodating linguistic nuances and visual aesthetics.</li>
+                    <li><strong>Authentic Feedback:</strong> Implementing advanced sarcasm detection to accurately correct and interpret review polarities.</li>
+                </ul>
+            </div>
+
+            <!-- Methodology Timeline -->
+            <div class="domain-section" style="margin-top: 5rem;">
+                <h2 style="margin-bottom: 3rem; text-align: center; border: none; padding: 0;">Methodology Pipeline</h2>
+                
+                <div class="methodology-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--deep-navy);">Data Foundation and Preprocessing</h3>
+                        <p class="text-muted">The framework draws from SLTDA reports, Google Trends, TripAdvisor, and Booking.com. Monthly arrival figures are down-sampled into daily predictions via PyMC Bayesian modeling. Features include rainfall log-transformation and Bayesian smooth target encoding for holidays. Consensus Feature Selection utilizes Pearson, Lasso, SHAP, and Random Forest Importance.</p>
+                    </div>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--deep-navy);">Integrated Modeling Layers</h3>
+                        <ul style="padding-left: 1.2rem; color: var(--text-muted); line-height: 1.8;">
+                            <li><strong>Arrival Forecasting:</strong> Employs a hybrid ensemble of SVR and TSFormer optimized via Bayesian Optimization (Test R² of 0.9230).</li>
+                            <li><strong>Flow Distribution:</strong> Uses a Global Panel Matrix to project visitor flows across 15 sites (Panel Ridge Regression reached 89.26% accuracy).</li>
+                            <li><strong>Recommendation & Sentiment:</strong> A full hybrid model integrating XLM-RoBERTa and VGG visual features, alongside BERT-based sarcasm detection (F1: 0.8896) to correct review polarities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="domain-section" style="margin-top: 5rem; padding-bottom: 4rem;">
+                <h2 style="margin-bottom: 2rem; text-align: center; border: none; padding: 0;">Core Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-react-original colored"></i></div>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-python-plain colored"></i></div>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-tensorflow-original colored"></i></div>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-keras-plain colored"></i></div>
+                        <span>Keras</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-spring-original colored"></i></div>
+                        <span>Spring</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-googlecolab-plain colored" style="color: #f9ab00;"></i></div>
+                        <span>Colab</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-flask-original colored"></i></div>
+                        <span>Flask</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-firebase-plain colored"></i></div>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-github-original colored" style="color: #181717;"></i></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-fastapi-plain colored"></i></div>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-icon-card">
+                        <div class="tech-icon-circle"><i class="devicon-javascript-plain colored"></i></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="padding: 1rem 2rem;">
+            <p>&copy; 2026 DTIF Project. SLIIT Department of Data Science.</p>
+        </div>
+    </footer>
+</body>
+</html>
