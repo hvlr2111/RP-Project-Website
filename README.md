@@ -1,2 +1,2 @@
 # RP-Project-Website
-DTIF Project Website
+Just select index.html
